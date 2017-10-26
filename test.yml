@@ -1,4 +1,8 @@
 - hosts: travis.dev
   remote_user: root
+  
   roles:
-    - ansible-java-certificate
+    - { role: ./,
+        java_certificate_host: github.com,
+        java_certificate_port: 443,
+      }
