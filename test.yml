@@ -3,6 +3,7 @@
   
   roles:
     - { role: ./,
+        java_path: /usr/lib/jvm/java-8-oracle
         java_certificate_host: github.com,
         java_certificate_port: 443,
       }
